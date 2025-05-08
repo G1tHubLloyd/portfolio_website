@@ -1,0 +1,359 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Define color variables in :root */
+:root {
+
+  /* Typography Variables */
+
+  /* Spacing Variables */
+}
+
+/* Universal Box Sizing */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Ensure the body takes up at least the full height of the viewport */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Aligns items vertically in the center */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* Distributes space between items */
+  padding: 15px;
+  /* Adds spacing */
+  background-color: #e6d8d8;
+}
+
+.logo {
+  /* Adjust size of your real logo */
+  height: 100px;
+}
+
+/* Spacing between profile image and text */
+.profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+.animated-star {
+  position: absolute;
+  -webkit-animation: moveAround 5s infinite alternate ease-in-out;
+  animation: moveAround 5s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes moveAround {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  50% {
+    top: 200px;
+    left: 400px;
+  }
+
+  100% {
+    top: 600px;
+    left: 0px;
+  }
+}
+
+@keyframes moveAround {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  50% {
+    top: 200px;
+    left: 400px;
+  }
+
+  100% {
+    top: 600px;
+    left: 0px;
+  }
+}
+
+
+.welcome-text {
+  font-size: 50px;
+  color: #45db17;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Switch to a 2-column grid */
+@media (max-width: 768px) {
+  .grid-container {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+/* Switch to a 1-column grid */
+@media (max-width: 480px) {
+  .grid-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.about-container {
+  background: -webkit-gradient(linear, left top, right top, from(#ff7e5f), to(#feb47b));
+  background: -o-linear-gradient(left, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+display: -webkit-box;
+
+display: -ms-flexbox;
+
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+min-height: 100vh;
+
+/* Ensure the body takes up at least the full height of the viewport */
+.grid-item {
+  background-color: lightgray;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  /* Removes default bullets */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Aligns items horizontally */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* Centers items */
+  gap: 10px;
+  /* Adds space between items */
+  padding: 10px;
+  /* background-color: #333;*/
+}
+
+li {
+  display: inline;
+}
+
+/* Hover effect with pointer cursor */
+.grid-item {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Aligns items vertically in the center */
+  gap: 20px;
+  /* Adds space between image and text */
+}
+
+.grid-item:hover {
+  background-color: dodgerblue;
+  color: white;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 10px 0;
+}
+
+.standard-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+  /* Adds both horizontal and vertical spacing */
+}
+
+th {
+  text-align: left;
+  /* Ensures headers align to the left */
+  padding: 5px;
+  /* Adds padding inside headers */
+}
+
+td {
+  padding: 5px;
+  /* Adds space inside each cell */
+  text-align: left;
+  /* Keeps text aligned to the left */
+}
+
+.image-container img {
+  width: 50px;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  /* Enlarges the image when hovered */
+}
+
+.image-container img {
+  cursor: pointer;
+  /* Changes the cursor to a hand when hovering */
+}
+
+.image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.image-container img {
+  margin: 10px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* Horizontally center the content */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Vertically center the content */
+  height: 60px;
+  /* Adjust the height as needed */
+  background-color: #333;
+  /* Dark background color */
+  color: #fff;
+  /* White text color for contrast */
+  font-size: 14px;
+  /* Adjust font size */
+}

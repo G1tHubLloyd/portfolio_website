@@ -123,3 +123,17 @@ header {
   color: var(--text-color);
   font-size: var(--font-size-default);
 }
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Change to any color you want */
+    width: 300px;
+    height: 100px;
+    margin: auto; /* Centers the box horizontally */
+    border-radius: 10px; /* Adds rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
+}
